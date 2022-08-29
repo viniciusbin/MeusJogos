@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815BB2F628BBB9280073B85D /* JogosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB2F528BBB9280073B85D /* JogosTableViewController.swift */; };
+		815BB2F828BBB9410073B85D /* PlataformasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB2F728BBB9410073B85D /* PlataformasTableViewController.swift */; };
+		815BB2FA28BBB9660073B85D /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB2F928BBB9660073B85D /* JogoViewController.swift */; };
+		815BB2FC28BBB9850073B85D /* EditOrAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB2FB28BBB9850073B85D /* EditOrAddViewController.swift */; };
+		815BB2FE28BBB9EF0073B85D /* JogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB2FD28BBB9EF0073B85D /* JogoTableViewCell.swift */; };
+		815BB30328BBCEC20073B85D /* ViewController+Coredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB30228BBCEC20073B85D /* ViewController+Coredata.swift */; };
+		815BB30528BBF2FA0073B85D /* PlataformasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815BB30428BBF2FA0073B85D /* PlataformasManager.swift */; };
 		8169884128B949F400814E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8169884028B949F400814E62 /* AppDelegate.swift */; };
 		8169884328B949F400814E62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8169884228B949F400814E62 /* SceneDelegate.swift */; };
 		8169884528B949F400814E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8169884428B949F400814E62 /* ViewController.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		815BB2F528BBB9280073B85D /* JogosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogosTableViewController.swift; sourceTree = "<group>"; };
+		815BB2F728BBB9410073B85D /* PlataformasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlataformasTableViewController.swift; sourceTree = "<group>"; };
+		815BB2F928BBB9660073B85D /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
+		815BB2FB28BBB9850073B85D /* EditOrAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrAddViewController.swift; sourceTree = "<group>"; };
+		815BB2FD28BBB9EF0073B85D /* JogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoTableViewCell.swift; sourceTree = "<group>"; };
+		815BB30228BBCEC20073B85D /* ViewController+Coredata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Coredata.swift"; sourceTree = "<group>"; };
+		815BB30428BBF2FA0073B85D /* PlataformasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlataformasManager.swift; sourceTree = "<group>"; };
 		8169883D28B949F400814E62 /* MeusJogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeusJogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8169884028B949F400814E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8169884228B949F400814E62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +53,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815BB2FF28BBC0350073B85D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8169884428B949F400814E62 /* ViewController.swift */,
+				815BB2F728BBB9410073B85D /* PlataformasTableViewController.swift */,
+				815BB2F928BBB9660073B85D /* JogoViewController.swift */,
+				815BB2FB28BBB9850073B85D /* EditOrAddViewController.swift */,
+				815BB2FD28BBB9EF0073B85D /* JogoTableViewCell.swift */,
+				815BB2F528BBB9280073B85D /* JogosTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		815BB30028BBC0600073B85D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8169884628B949F400814E62 /* Main.storyboard */,
+				8169884E28B949F700814E62 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		815BB30128BBC0760073B85D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8169884928B949F400814E62 /* MeusJogos.xcdatamodeld */,
+				815BB30428BBF2FA0073B85D /* PlataformasManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8169883428B949F400814E62 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +105,12 @@
 			children = (
 				8169884028B949F400814E62 /* AppDelegate.swift */,
 				8169884228B949F400814E62 /* SceneDelegate.swift */,
-				8169884428B949F400814E62 /* ViewController.swift */,
-				8169884628B949F400814E62 /* Main.storyboard */,
 				8169884C28B949F700814E62 /* Assets.xcassets */,
-				8169884E28B949F700814E62 /* LaunchScreen.storyboard */,
 				8169885128B949F700814E62 /* Info.plist */,
-				8169884928B949F400814E62 /* MeusJogos.xcdatamodeld */,
+				815BB30028BBC0600073B85D /* Views */,
+				815BB30128BBC0760073B85D /* Model */,
+				815BB2FF28BBC0350073B85D /* Controllers */,
+				815BB30228BBCEC20073B85D /* ViewController+Coredata.swift */,
 			);
 			path = MeusJogos;
 			sourceTree = "<group>";
@@ -141,10 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815BB2FA28BBB9660073B85D /* JogoViewController.swift in Sources */,
+				815BB30528BBF2FA0073B85D /* PlataformasManager.swift in Sources */,
+				815BB30328BBCEC20073B85D /* ViewController+Coredata.swift in Sources */,
 				8169884528B949F400814E62 /* ViewController.swift in Sources */,
 				8169884128B949F400814E62 /* AppDelegate.swift in Sources */,
+				815BB2F828BBB9410073B85D /* PlataformasTableViewController.swift in Sources */,
 				8169884B28B949F400814E62 /* MeusJogos.xcdatamodeld in Sources */,
+				815BB2FE28BBB9EF0073B85D /* JogoTableViewCell.swift in Sources */,
 				8169884328B949F400814E62 /* SceneDelegate.swift in Sources */,
+				815BB2F628BBB9280073B85D /* JogosTableViewController.swift in Sources */,
+				815BB2FC28BBB9850073B85D /* EditOrAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +349,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +361,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
